@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <title>Manish Hasija Home</title>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link href="../smartmenus/sm-core-css.css" rel="stylesheet">
+    <link href="../smartmenus/sm-simple.css" rel="stylesheet">
+    <script src="../_js/jquery-3.5.1.min.js"></script>
+    <script src="../smartmenus/jquery.smartmenus.min.js"></script>
+   
+    <style type="text/css">
+        #Intro{
+    
+            
+        }   
+        
+        .me img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .me{
+            height: 40%;
+            width: 100%;
+        }
+        
+        .headline {
+            position: absolute;
+            top: 42%;
+            left: 10%;
+            font-size: 60px;
+            transform: translate(-20%, -70%);
+            color: greenyellow;
+        }
+        
+        #box {
+            position: absolute;
+            top:50%;
+        background-color: lightcyan;
+         
+        width: 1000px;
+        height: 2000px;
+        display: none;
+        
+    }
+        #faq, .faq
+        {
+            text-decoration: underline;
+        }
+        
+        #
+       
+      </style>    
+      
+      <script type="text/javascript">
+      
+     $(function()
+        {
+            $('.tog a').click(function()
+               {
+                //$('#box').hide(1000);
+                //$('#box').fadeOut();
+                //$('#box').slideUp(2000);
+                //$('#box').slideDown(2000);   
+                //$('#box').fadeIn(2000);
+                //$('#box').show(1000);
+                //$('#box').toggle('slow');
+                //$('#box p').css('color', 'pink');
+                $('#box').toggle('slow');
+   });// closed click function 
+         
+        
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+        {
+        
+            $ul.slideDown(250,complete);
+        },
+        hideFunction: function($ul,complete)
+        {
+            $ul.slideUp(250,complete)
+    
+        }
+    });
+         
+         
+         
+         
+         $('.tog h1').mouseover(function()
+                               {
+             $(".tog h1").css("background-color","lightyellow");
+         });
+         
+          $('.tog h1').mouseleave(function()
+                               {
+             $(".tog h1").css("background-color","");
+         });
+
+         $('html').dblclick(function()
+        {
+        alert('Great, Looks like you have started to Dream Big');     
+         });//closed Double click Html   
+         
+         $('.answer').hide();
+         
+         $('.faq a').click(function()
+               {
+                $('.answer').toggle('');
+   });// closed click function 
+         
+         
+         
+}); // Closed Function 
+</script>
+      
+ </head> 
+  <body>
+      <div class="navbar">
+          <div class="container flex">
+              <h1>Manish Hasija</h1>
+              <nav> 
+                  <ul class="sm sm-simple">
+                      <li><a href="../pages/template.html"><b>Template</b></a> 
+                        <ul>
+                            <li><a href="#">Template 1 </a></li>
+                            <li><a href="#">Template 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/index.html">Home</a></li>
+                      <li><a href="../pages/gallery.html">Gallery</a>
+                       <ul>
+                            <li><a href="../pages/gallery1.html">Gallery 1  </a></li>
+                            <li><a href="../pages/gallery2.html">Gallery 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/contact.html">Contact Us</a></li>
+                      <li><a href="../pages/aboutus.html">About Us</a>
+                             <ul>
+                            <li><a href="#">Mission Statement  </a></li>
+                            <li><a href="#">Know More </a>
+                            <ul>
+                                    <li><a href="#">Our Phisophy  </a></li>
+                                    <li><a href="#">Coming Soon </a></li>
+                                </ul>
+       
+                                 
+                                 
+                            </li>
+                            </ul>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+    
+<div class ="me">
+<img src="../_images/large/Dreams.jpg" alt="">
+</div>    
+<div class="tog">
+    <a href="#"> <h1 class="headline"><u> Dream Big</u></h1></a>
+</div>
+     
+      
+      <div id="box" class="box"> 
+        <p>Hi! My Name is Manish,Here are 8 reason to Dream Big</p>
+          
+        <div class="faq"> <h2> <a href="#"> Because there’s less competition </a> </h2></div>
+        <div class="answer"><p>There are far fewer applications for the huge, life-changing roles, contracts and grants than there are for the smaller ones. It’s lonely at the top. People talk themselves out of aiming high. They settle for less, make excuses and rarely leave their comfort zone. They believe that someone else will be better qualified so they don’t submit an application.Submit the application. Put your name in the hat and make the case for why it should be you. Back yourself. Dream big because no one else is daring to do it.</p></div>
+          
+          <div class="faq"><h2> <a href="#">Because falling just short will still be great</a> </h2></div>
+        <div class="answer"><p>Picture hearing the best news you could ever hear, for your life or career. Now imagine falling just short of that. Still good, right? The bigger your plan A, by default, the better your plan B, C and D. As Les Brown said, “Shoot for the moon. Even if you miss it you will land among the stars.</p></div>
+          <div class="faq"><h2> <a href="#">Because you could reach so many more people</a></h2></div>
+        <div class="answer"><p>If you truly believe you’re onto something amazing, that your product or service or invention can genuinely save lives or make people happy or solve a problem, go big with your plans. Aim to surprise and delight as many people as possible, as fast as possible, and ride the word-of-mouth wave to reach higher heights. Unlock the opportunities that come from scale and magnify your impact</p></div>
+        <div class="faq"><h2><a href="#">Because going small is easy and boring</a></h2></div>
+        <div class="answer"><p>As Marilyn Monroe put it: “Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”Make living an ordinary life your worse-case scenario, not your master plan. You can always opt out and take a step back in the future. It’s always possible to downsize, downgrade and take it slowly. You always have that fallback. I’d much rather say “I can’t believe I did that” than “I wish I’d done that”.</p></div>
+        <div class="faq"><h2><a href="#">Because there’s always a way</a></h2></div>
+        <div class="answer"><p>As Walt Disney said, “All our dreams can come true, if we have the courage to pursue them.”If someone else is doing it, you can do it. No matter the favourable circumstances or the head start they might have had, you can come up with the ideas to level the playing field. For every person looking make cutbacks, there’s another looking to spend a budget. For every person looking for experience, there’s another looking for fresh eyes and enthusiasm. Other people are accessing the opportunities that could be yours, so let that be proof that it’s possible for you.</p></div>
+        <div class="faq"><h2><a href="#"> Because it’s newsworthy</a></h2></div>
+        <div class="answer"><p>TAs Daniel Burnham, Architect of Chicago, said: “Make no little plans; they have no magic to stir men's blood and probably themselves will not be realized. Make big plans; aim high in hope and work…”. Big plans ignite the imagination of others. You’re taken seriously, you’re thought of differently. Your name becomes synonymous with big projects, big opportunities, big success. You gather a tribe because others want to share in that success or cheer you on. It’s aspirational, it’s inspirational and success breeds success. From the Female Entrepreneur Association, as shared by Carrie Green on International Women’s Day: “Be the kind of woman that makes others want to up their game”</p></div>
+        <div class="faq"><h2><a href="#">Because you’re fully capable of doing it</a></h2></div>
+        <div class="answer"><p>Write down all of the goals you want to achieve in your whole life. Stare at them and imagine them happening. Now picture anyone else who is better placed to achieve those things. Who has the skills, network, intention and belief to achieve those things? It’s you. It’s you alone. No one on this planet is better placed to carry out the work that you were put here to do and the difference you were put here to make.Possessing self-belief and courage is impressive to witness and can amass a crowd. As Harriet Tubman said, “Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.”</p></div>
+        <div class="faq"><h2><a href="#">Because your time here is finite</a></h2></div>
+        <div class="answer"><p>Fear of failure holding you back? Yes, failure is a possibility, but is that really the worst that could happen? The worst case scenario is probably that you’ll die. One day that’s going to happen anyway, so you might as well dream big ahead of that. Stop acting like you’re going to live forever.From Erin Hanson, “What if I fail? But oh my darling, what if you fly?” It could be you that gets that life-changing phone call or opportunity or that unexpected “yes”. Dreaming, planning and putting the work in turns long odds into short ones. Make the audacious plans, ask the giant questions and consider that every possibility could very well happen.</p></div>
+    
+   
+</div>  
+<div Class="welcome">
+      
+    <h1 align=centre></h1><p><b>Welcome</b> to my Project Site. I have developed this site based of the coursework in WBG 310 - Interactive Web page development. This course has strengthened my knowledge in Web development and practical understanding of the principles, standards, and conventions of web scripting using the JavaScript language and some of its most popular libraries, like jQuery. </p>
+    <p> As I was building this site , I wanted to keep thing simple but elegant. I choose some basic colors which were not eye sore and easy navigation bar which is standard across all pages.Inaddition I tried to follow following key principles of designing visually appealing website</p>
+    <ul>
+        <li>Keep your design balanced. </li>
+        <li>Compartmentalize your design by using grids </li>
+        <li>Pick two or three base colors at most for your design.</li>
+        <li>Try to make the graphics go well together.</li>
+        <li>Improve your website’s typography.</li>
+        <li>Make elements stand out by adding white space around them. </li>
+        <li>Have all elements connected.</li>
+    </ul>
+    
+    <p>When I started working with this site it was only to be used for this project but I have decided to continue to evolve this for my own personal portfolio, I have attached the link to portfolio with this site but be sure to check in the future as this will be my personal landing page. Thanks </p>
+    <br>
+    <a href="">MY CWP Link</a>
+      
+      </div>      
+ <div class="footbar"> 
+        <footer>
+        <p> <a href="Citation.html" target="popup" 
+               onclick="window.open('citation.html','popup','width=800,height=800,scrollbars=no,resizable=no'); return false;">Citation</a> </p>
+        
+	  </footer>
+    </div>
+      
+</body>
+</html>
+

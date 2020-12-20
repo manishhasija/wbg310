@@ -1,0 +1,176 @@
+/* Font Import Lato - Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+//* base styles , lets see if I need more   */
+
+*{
+    box-sizing: border-box;
+        padding:0;
+        margin:0;
+        
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    }
+
+ul{
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2{
+    font-weight: 300px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+/* Container  adjustment + Navbar styling   */
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.navbar{
+    display:inherit;
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+    
+  
+}
+.navbar ul{
+    display: flex;
+    
+}
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    
+}
+.navbar a:hover{
+    border-bottom: 2px #fff solid;
+    overflow: visible;
+}
+.navbar .flex{
+    justify-content: space-between;
+    
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    overflow: visible;
+   
+}
+
+/* Form Beautification */
+.msgarea{
+    height: 400px;
+    position: relative;
+    
+}
+
+.msgbox{
+    width: 300px;
+    height: 75px;
+}
+
+.formi{
+    vertical-align: top;
+    padding-left: 40px;
+    display: inline-block;
+    width: 30%;
+}
+/*
+.showcase h1{
+    font-size: 30px;
+}
+
+.showcase-form{
+    display: grid;
+    grid-template-columns: repeat(2,flr);
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    
+}
+
+.test-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 500px;
+    padding: 40px;
+    z-index: 100;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    
+}
+*/
+
+
+.mbox{
+    background-color:#ccccff;
+	height:auto;
+	width:500px;
+	border:1px solid red;
+	padding:10px;
+	margin-left:20px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+	border-radius:7px;
+    align-content: 
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #047aed;
+    color: #fff;
+}
+
+footer a
+{ color: white;
+    text-align: right;
+}
+
+
+
+

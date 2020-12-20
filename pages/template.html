@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Manish Hasija Template</title>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link href="../smartmenus/sm-core-css.css" rel="stylesheet">
+    <link href="../smartmenus/sm-simple.css" rel="stylesheet">
+    <script src="../_js/jquery-3.5.1.min.js"></script>
+    <script src="../smartmenus/jquery.smartmenus.min.js"></script>
+    <script>
+    
+    $(document).ready(function() {
+    
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+        {
+        
+            $ul.slideDown(250,complete);
+        },
+        hideFunction: function($ul,complete)
+        {
+            $ul.slideUp(250,complete)
+    
+        }
+    });
+    
+}); // end ready
+</script>  
+      
+  </head>
+  <body>
+      <div class="navbar">
+          <div class="container flex">
+              <h1>Manish Hasija</h1>
+              <nav> 
+                  <ul class="sm sm-simple">
+                      <li><a href="../pages/template.html"><b>Template</b></a> 
+                        <ul>
+                            <li><a href="#">Template 1 </a></li>
+                            <li><a href="#">Template 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/index.html">Home</a></li>
+                      <li><a href="../pages/gallery.html">Gallery</a>
+                       <ul>
+                            <li><a href="../pages/gallery1.html">Gallery 1  </a></li>
+                            <li><a href="../pages/gallery2.html">Gallery 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/contact.html">Contact Us</a></li>
+                      <li><a href="../pages/aboutus.html">About Us</a>
+                             <ul>
+                            <li><a href="#">Mission Statement  </a></li>
+                            <li><a href="#">Know More </a>
+                            <ul>
+                                    <li><a href="#">Our Phisophy  </a></li>
+                                    <li><a href="#">Coming Soon </a></li>
+                                </ul>
+       
+                                 
+                                 
+                            </li>
+                            </ul>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+          
+      </div>
+      <div class="footbar"> 
+        <footer>
+        <p> <a href="Citation.html" target="popup" 
+               onclick="window.open('citation.html','popup','width=800,height=800,scrollbars=no,resizable=no'); return false;">Citation</a> </p>
+        
+	  </footer>
+    </div>
+     
+    </body>
+</html>
+

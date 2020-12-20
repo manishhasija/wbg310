@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>Manish Hasija Motivational Gallery</title>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link href="../smartmenus/sm-core-css.css" rel="stylesheet">
+    <link href="../smartmenus/sm-simple.css" rel="stylesheet">
+    <script src="../_js/jquery-3.5.1.min.js"></script>
+    <script src="../smartmenus/jquery.smartmenus.min.js"></script> 
+    
+   
+  <Style>
+    #gallery {
+	float: left;
+	width: 90px;
+	margin-right: 30px;
+	margin-left: 10px;
+	border-right: white 1px dotted;
+    }
+#gallery img {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	border: 1px solid rgb(0,0,0);
+}
+#photo {
+	margin-left: 150px;
+	position: relative;
+    
+}
+#photo img {
+	position: absolute;
+   
+}
+#test h1
+      {
+         text-align: center;
+      }
+</Style>
+
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+      
+$('#gallery img').each(function(i) {
+	var imgFile = $(this).attr('src');
+	var preloadImage = new Image();
+	var imgExt = /(\.\w{3,4}$)/;
+	preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		
+	$(this).hover(
+		function() {
+			$(this).attr('src', preloadImage.src);
+		},
+		function () {
+		var currentSource=$(this).attr('src');
+			$(this).attr('src', imgFile);
+	}); // end hover
+}); // end each
+	
+//insert new programming below this line
+$('#gallery a').click(function (evt)
+{
+    //dont follow link
+    evt.preventDefault(); 
+    var imgPath =$(this).attr('href');
+    var oldImage=$('#photo img');
+    var newImage=$('<img src="'+ imgPath +'">');
+    newImage.hide();
+    $('#photo').prepend(newImage);
+    newImage.fadeIn(1000);
+    oldImage.fadeOut(1000, function()
+                    {
+                      $(this).remove();  
+                    });
+});	// gallery link click
+	$('#gallery a:first').click();
+  
+}); // end ready
+    
+$(document).ready(function() {
+    
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+        {
+        
+            $ul.slideDown(250,complete);
+        },
+        hideFunction: function($ul,complete)
+        {
+            $ul.slideUp(250,complete)
+    
+        }
+    });
+}); // end ready  
+</script>    
+      
+ 
+      
+</head>
+  <body>
+<div class="navbar">
+          <div class="container flex">
+              <h1>Manish Hasija</h1>
+              <nav> 
+                  <ul class="sm sm-simple">
+                      <li><a href="../pages/template.html"><b>Template</b></a> 
+                        <ul>
+                            <li><a href="#">Template 1 </a></li>
+                            <li><a href="#">Template 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/index.html">Home</a></li>
+                      <li><a href="../pages/gallery.html">Gallery</a>
+                       <ul>
+                            <li><a href="../pages/gallery1.html">Gallery 1  </a></li>
+                            <li><a href="../pages/gallery2.html">Gallery 2 </a></li>
+                           
+                        </ul>
+                      </li>
+                      <li><a href="../pages/contact.html">Contact Us</a></li>
+                      <li><a href="../pages/aboutus.html">About Us</a>
+                             <ul>
+                            <li><a href="#">Mission Statement  </a></li>
+                            <li><a href="#">Know More </a>
+                            <ul>
+                                    <li><a href="#">Our Phisophy  </a></li>
+                                    <li><a href="#">Coming Soon </a></li>
+                                </ul>  
+                            </li>
+                            </ul>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      
+    <div class="wrapper">
+	<div class="content">
+		<div class="main">
+            <div id ="test"><h1>Manish's Motivational Photo Gallery</h1></div>
+			<div id="gallery"> 
+                <a href="../_images/large/Dreams.jpg"><img src="../_images/small/Dreams.jpg" width="70" height="70" alt="Dreams"></a>
+                <a href="../_images/large/never.jpg"><img src="../_images/small/never.jpg" width="70" height="70" alt="Never"></a> 
+                <a href="../_images/large/pain.jpg"><img src="../_images/small/pain.jpg" width="70" height="70" alt="Pain"></a>
+                <a href="../_images/large/rain.jpg"><img src="../_images/small/rain.jpg" width="70" height="70" alt="Rain"></a>
+                <a href="../_images/large/sailor.jpg"><img src="../_images/small/sailor.jpg" width="70" height="70" alt="Sailor"></a>
+                <a href="../_images/large/success.jpg"><img src="../_images/small/success.jpg" width="70" height="70" alt="Success"></a></div>
+			<div id="photo"></div>
+		</div>
+	</div>
+</div>  
+      <div class="footbar"> 
+        <footer>
+        <p> <a href="Citation.html" target="popup" 
+               onclick="window.open('citation.html','popup','width=800,height=800,scrollbars=no,resizable=no'); return false;">Citation</a> </p>
+        
+	  </footer>
+    </div>
+    </body>
+</html>
